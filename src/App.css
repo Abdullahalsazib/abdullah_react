@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 200px;
+  background: green;
+}
+header nav {
+  width: 100%;
+  height: 50px;
+  background: skyblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 10%;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+}
+ul li {
+  margin-inline: 8px;
+}
+li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+  font-size: 17px;
+}
+.Login_btn {
+  padding: 3px 10px;
+  border: none;
+  border-radius: 2px;
+  background: green;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: "Times New Roman", Times, serif;
+}
+.login-box {
+  width: 100%;
+  background: none;
+  padding-inline: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease-in-out;
+}
+.login-box-toggle {
+  opacity: 1;
+  pointer-events: auto;
+}
+.login-box from {
+  background: red;
+  border-radius: 9px;
+  padding: 0 10px;
+}
+from h1 {
+  font-size: 23px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 3px;
+  border-bottom: 2px solid gray;
+}
+from label {
+  font-size: 15px;
+  font-weight: 700;
+  display: flex;
+  padding-block: 10px;
+  text-transform: capitalize;
+  color: #fff;
+}
+from input {
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  padding: 10px;
+}
+.btn_align {
+  display: flex;
+}
+.login {
+  padding: 3px 18px;
+  font-size: 19px;
+  font-weight: 600;
+  margin: 10px auto;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 620px) {
+  body {
+    background-color: black;
+  }
+  nav ul {
+    display: none;
+  }
+}
